@@ -60,7 +60,5 @@ public class GradeReport {
         System.out.println(gradeD.size()+" students made D");
         System.out.println(gradeF.size()+" students made F");
 
-
-        //ytftyftydtyxytdyuxyrudthy
     }
 }
