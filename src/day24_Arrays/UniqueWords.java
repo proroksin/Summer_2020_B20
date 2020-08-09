@@ -19,12 +19,6 @@ public class UniqueWords {
             if(count == 1){
                 System.out.println(s);
             }
-
         }
-
-
-
-
-
     }
 }
