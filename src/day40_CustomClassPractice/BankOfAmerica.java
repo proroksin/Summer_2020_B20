@@ -17,6 +17,10 @@ public class BankOfAmerica {
         Dawud.Withdraw(500);
 
         Dawud.checkBalance();
+
+        Dawud.Withdraw(100000);
+
+        Dawud.checkBalance();
     }
 
 }

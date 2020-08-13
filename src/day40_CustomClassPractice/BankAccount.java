@@ -47,6 +47,10 @@ public class BankAccount {
     }
 
     public void Withdraw(double amount){
+        if(amount > balance) {
+            System.out.println("Not enough money broke ass bitch");
+            return;
+        }
         System.out.println("Withdrawing $"+amount+" from "+accountNumber);
         balance -= amount;
     }
