@@ -22,10 +22,10 @@ public class BankAccount {
         String accountNumber;
         double balance;
 
-    public void setAccountInfo(String clientAccountType, String name, String acctNum){//sets the info
-        accountType = clientAccountType;
-        accountHolder = name;
-        accountNumber = acctNum;
+    public void setAccountInfo(String AccountType, String accountHolder, String accountNumber){//sets the info
+        this.accountType = AccountType;
+        this.accountHolder = accountHolder;
+        this.accountNumber = accountNumber;
 
     }
     public void getAccountInfo(){//displays accounbt info
