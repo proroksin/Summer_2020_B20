@@ -36,7 +36,8 @@ public class Carpet {
         //return (isPersian)? totalPrice + 200 : totalPrice ;
         return totalPrice;
     }
-        public void getCarpetInfo(){
+
+    public void getCarpetInfo(){
             System.out.println("================================");
             System.out.println("Width: "+width);
             System.out.println("Length: "+length);
@@ -45,6 +46,10 @@ public class Carpet {
             System.out.println("Total Price: "+ calcCost());
             System.out.println("================================");
         }
+
+    public String toString(){
+        return "Width: "+width+", Length: "+length+", Persian: "+isPersian;
+    }
 
 
 /*
