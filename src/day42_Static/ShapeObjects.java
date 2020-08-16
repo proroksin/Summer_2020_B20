@@ -18,6 +18,18 @@ public class ShapeObjects {
 
         System.out.println(c2);
 
+        System.out.println("============================");
+        Circle c3 = new Circle();
+
+        System.out.println(c3);
+
+        int a = 100;
+
+        // static int b = 300;
+
+
+
+
 
 
     }
