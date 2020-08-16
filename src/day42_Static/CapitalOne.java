@@ -44,13 +44,13 @@ public class CapitalOne {
 
         System.out.println("=================================================");
         Developer dev1 = new Developer();
-        dev1.setInfo("luisa", 'f', 2113L, "Dev Lead" , 500000);
+        dev1.setInfo("luisa", 'F', 2113L, "Dev Lead" , 500000);
 
         team1.addDeveloper(dev1);
 
         System.out.println(team1);
 
-        ScrumTeam[] scrumTeams = {team1, new ScrumTeam(), new ScrumTeam() };
+        //ScrumTeam[] scrumTeams = {team1, new ScrumTeam(), new ScrumTeam() };
 
 
 
