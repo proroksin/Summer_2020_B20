@@ -19,7 +19,7 @@ public class Circle {
     }
 
     public String toString(){
-        return "The area of the circle with the radius of"+radius+" is: "+calcArea();
+        return "Radius: "+radius+"\nDiameter: "+diameter+"\nPI: "+pi+"\nAreaP: "+calcArea()+"\nPerimeter: "+calcPerimeter();
     }
 
 }
