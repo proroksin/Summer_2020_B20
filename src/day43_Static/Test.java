@@ -1,6 +1,8 @@
 package day43_Static;
 
 import java.util.Arrays;
+import static Library.Resources.a; // only specific static member
+import static Library.Resources.*; // imports all class members from
 
 public class Test {
 
@@ -14,7 +16,7 @@ public class Test {
         System.out.println(Data.list);
 
         System.out.println("=======================================");
-
+        System.out.println(a);
 
     }
 }
