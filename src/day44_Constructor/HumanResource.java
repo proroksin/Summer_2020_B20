@@ -18,6 +18,7 @@ public class HumanResource {
     //employee1.setEmployeeInfo();
 
     static{ // as soon as the class called, the static variables need to be set
+
         employee1= new Employee();
         employee2= new Employee();
         employee3= new Employee();
