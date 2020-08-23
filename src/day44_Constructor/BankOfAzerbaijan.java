@@ -13,7 +13,7 @@ public class BankOfAzerbaijan {
         list.add( HumanResource.employee1);
         list.add( HumanResource.employee3);
         list.add( HumanResource.employee5);
-        */
+        */  //
 
         /*
         list.addAll(Arrays.asList( HumanResource.employee1,employee2, employee5));
