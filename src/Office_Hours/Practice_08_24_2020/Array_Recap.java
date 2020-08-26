@@ -1,6 +1,8 @@
 package Office_Hours.Practice_08_24_2020;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Array_Recap {
@@ -53,9 +55,6 @@ public class Array_Recap {
 
 
         System.out.println( Arrays.toString(names) );
-
-
-
 
 
     }
