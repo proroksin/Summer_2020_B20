@@ -20,12 +20,15 @@ public class ConstructorCalls2 {
 
     }
 
-
     public ConstructorCalls2(char a){
-        this();
-        System.out.println("D");
+        this(); // A
+        System.out.println("D"); // D
     }
 
+    public ConstructorCalls2(double a){
+        System.out.println("E");
+        //this(10);
+    }
 
     public static void main(String[] args) {
 
