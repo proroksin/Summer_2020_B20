@@ -7,4 +7,24 @@ public class AccessModifiers {
     public static void publicMethod(){
         System.out.println("public method");
     }
+
+    // default:
+    public static int defaultVariable = 200;
+
+    public static void defaultMethod(){ System.out.println("default method"); }
+
+    //private:
+    private static int privateVariable = 300;
+
+    private static void privateMethod(){
+        System.out.println("private method");
+    }
+
+    public static void main(String[] args) {
+        System.out.println(publicVariable);
+        System.out.println(defaultVariable);
+        System.out.println(privateVariable);
+    }
+
+
 }
