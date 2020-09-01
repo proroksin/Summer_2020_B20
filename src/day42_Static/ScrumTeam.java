@@ -1,19 +1,10 @@
 package day42_Static;
-/*
- Actions:
- setInfo(): sets the names of: PO, BA, SM
- addTester(Tester tester): adds the given tester to the testers arraylist
- addTesters(Tester[] testers): adds the given testers to the testers arraylist
- addDeveloper(Developer developer): adds the given developer to the developers arraylist
- addDevelopers(Developer[] developers): adds the given developers to the developers arraylist
- removeTester(long employeeID): removes the given tester from the testers arraylist
- removeDeveloper(long employeeID): removes the developer from the developers arraylist
 
- */
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ScrumTeam {
+
     ArrayList<Tester> testers = new ArrayList<>();
     ArrayList<Developer> developers = new ArrayList<>();
     String PO;
@@ -26,20 +17,20 @@ public class ScrumTeam {
         this.SM = SM;
     }
 
-    public void addTester(Tester tester) {
+    public void addTester(Tester tester){
         testers.add(tester);
     }
 
-    public void addTesters(Tester[] testers){
-        if(testers.length==0){
+    public void addTester(Tester[] testers){
+        if(testers.length ==0){
             return;
         }
-        this.testers.addAll( Arrays.asList(testers) );
+        this.testers.addAll(Arrays.asList(testers) );
     }
 
-    public void removeTester(long employeeID){
-        testers.removeIf( p->p.employeeID == employeeID);
-        //                 each employee id == 007
+    public void removeTester(long employeeID){ // 007
+        testers.removeIf( p -> p.employeeID == employeeID);
+        //              each employee id,  == 007
     }
 
     public void addDeveloper(Developer developer){
@@ -47,19 +38,25 @@ public class ScrumTeam {
     }
 
     public void addDeveloper(Developer[] developers){
-        if(developers.length==0){// TO check if the array is empty
+        if(developers.length ==0){ // to check if the array is empty
             return;
         }
-        this.developers.addAll(Arrays.asList(developers));
+        this.developers.addAll(Arrays.asList(developers) );
     }
 
     public void removeDeveloper(long employeeID){
-        developers.removeIf(p->p.employeeID==employeeID);
-
+        developers.removeIf( p -> p.employeeID == employeeID );
     }
+
 
     public String toString(){
-        return testers.size()+" testers, " +developers.size() + " developers, PO: " + PO + ", BA: " + BA + ", SM " + SM;
+        return testers.size()+" testers, "+ developers.size()+" developers, PO: "+PO+", BA: "+BA+", SM: "+SM;
     }
+
+    /*
+    team1
+    team2
+    team3
+     */
 
 }
