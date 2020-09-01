@@ -1,20 +1,18 @@
 package day42_Static;
 
 public class Developer {
-
     String name;
+    char gender;
     long employeeID;
     String jobTitle;
     double salary;
-    char gender;
 
-    public void setInfo(String name, char gender, long employeeID, String jobTitle, double salary){
-        this.employeeID = employeeID;
-        this.name = name;
-        this.jobTitle = jobTitle;
-        this.salary = salary;
+    public void setInfo(String name, char gender,long employeeID, String jobTitle, double salary){
+        this.name=name;
+        this.employeeID=employeeID;
+        this.jobTitle=jobTitle;
+        this.salary=salary;
         this.gender = gender;
-
     }
 
     public void coding(){
@@ -26,6 +24,7 @@ public class Developer {
     }
 
     public String toString(){
-        return "Name: "+name+", Gender: "+gender+", JobTitle: "+jobTitle+", Salary: "+salary+", Employee ID: "+employeeID;
+        return "Name: "+name+", Gender: "+gender+", Job Title: "+jobTitle+", Salary: "+salary+", Employee ID: "+employeeID;
     }
+
 }
