@@ -1,7 +1,6 @@
 package day42_Static;
 
 public class Tester {
-
     String name;
     char gender;
     long employeeID;
@@ -27,5 +26,4 @@ public class Tester {
     public String toString(){
         return "Name: "+name+", Gender: "+gender+", Job Title: "+jobTitle+", Salary: "+salary+", Employee ID: "+employeeID;
     }
-
 }

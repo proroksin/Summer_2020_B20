@@ -1,5 +1,4 @@
 package day43_Static;
-import day42_Static.Tester;
 
 public class staticBlock2 {
 
