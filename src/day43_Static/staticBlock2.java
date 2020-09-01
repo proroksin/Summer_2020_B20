@@ -1,7 +1,6 @@
 package day43_Static;
-
+import day42_Static.Tester;
 public class staticBlock2 {
-
     static int a;
     static String b ;
     static Tester tester1;
@@ -27,6 +26,5 @@ public class staticBlock2 {
         System.out.println(b);
 
     }
-
 
 }
