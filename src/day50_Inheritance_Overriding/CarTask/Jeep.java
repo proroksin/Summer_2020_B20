@@ -5,7 +5,7 @@ Jeep:
              Oil change
              jump start
  */
-public class Jeep {
+public class Jeep extends Car{
 
     public void start(){
         System.out.println("Call mechanic");
