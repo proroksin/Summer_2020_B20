@@ -2,7 +2,7 @@ package day50_Inheritance_Overriding.ShapeTask;
 /*
 warmup Task:
         1. create a class called Shape
-                        vairables: area, perimeter
+                        variables: area, perimeter
                         methods: calculateArea(), calculatePerimeter()
 
  */
