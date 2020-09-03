@@ -1,0 +1,12 @@
+package day50_Inheritance_Overriding.CarTask;
+/*
+Mercedes:
+    start(): push the start button
+ */
+public class Mercedes {
+
+    public void start(){
+        System.out.println("Push the start button");
+    }
+
+}
