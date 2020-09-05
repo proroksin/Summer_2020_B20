@@ -14,5 +14,11 @@ public class BrowserObjects {
         firefox.get("http://www.google.com/");
         firefox.close();
 
+        System.out.println("======================================");
+
+        OperaBrowser opera = new OperaBrowser();
+        opera.get("http://www.google.com/");
+        opera.close();
+
     }
 }
