@@ -6,7 +6,6 @@ public class Cat extends Pet {
         super(name, breed, gender, age, color);
     }
 
-    @Override
     public String toString() {
         return "Cat{" +
                 "name='" + name + '\'' +

@@ -9,5 +9,17 @@ public class House {
         System.out.println(dog1.name);
 
         System.out.println(dog1);
+
+        Cat cat1 = new Cat("Nemo","Angora",'F',4,"Orange");
+
+        System.out.println(cat1);
+
+        Tiger tiger1 = new Tiger("Zara","Caspian",'M',12,"Brown");
+
+        System.out.println(tiger1);
+
+        tiger1.eat();
+        tiger1.drink();
+
     }
 }
