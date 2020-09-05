@@ -12,6 +12,7 @@ class B{
 public class SuperKeyWord2 extends B{
 
     public SuperKeyWord2(){
+        //super();// calls the super class constructor
         System.out.println("Sub class' default constructor");
     }
 
