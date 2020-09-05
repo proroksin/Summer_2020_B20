@@ -5,24 +5,34 @@ public class ExceptionPractice {
 
         System.out.println("Hello");
 
+        /*
         try{
             Thread.sleep(5000);
         }catch(InterruptedException e){
 
         }
 
+         */
+            sleep(3);
         System.out.println("World");
 
+        /*
         try{
             Thread.sleep(3000);
         }catch(InterruptedException e){
 
         }
 
+         */
+            sleep(5);
         System.out.println("How are you?");
     }
 
-    public static void
+    public static void sleep(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
 
-
+        }
+    }
 }
