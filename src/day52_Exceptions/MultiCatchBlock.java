@@ -34,8 +34,31 @@ public class MultiCatchBlock {
             System.out.println(e.getMessage());
         }
 
+        System.out.println("========================================");
+        try{
+            Thread.sleep(2000);
+        }catch (Exception e){
 
+        }
+        System.out.println("========================================");
 
+        try{
+            Thread.sleep(1000);
+        }catch (Exception e){
+
+        }
+        System.out.println("========================================");
+
+        try {
+            System.out.println(8/0);
+            System.out.println("Try block");
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Catch Block");
+        }finally {
+            System.out.println("Finally block");
+        }
+
+        System.out.println("Completed");
 
     }
 }
