@@ -52,7 +52,7 @@ class TestBase{
 
 class TestCase extends TestBase {
 
-    //@Test
+    //@Test ==>  run as TestNG
     //public void setUp(){ // final method cannot be override
 
     }
