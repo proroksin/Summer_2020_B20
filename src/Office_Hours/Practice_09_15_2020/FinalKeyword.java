@@ -34,6 +34,7 @@ public class FinalKeyword {
 
 }
 
+
 class TestBase{
     //@BeforeMethods
     public final void setUp(){
@@ -58,4 +59,6 @@ class TestCase extends TestBase {
     }
 
 
+class Tester{
+    //name,age,gender, jobTi, find
 }
