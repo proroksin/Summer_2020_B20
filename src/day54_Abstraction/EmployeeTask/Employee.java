@@ -1,5 +1,4 @@
 package day54_Abstraction.EmployeeTask;
-
 /*
 1.create a class named Employee (meant to be super class):
 			Attributes:
@@ -7,7 +6,6 @@ package day54_Abstraction.EmployeeTask;
 					create constructor that can initialize lal those attributes
 						(even final variable you should initialize them within constructor)
  */
-
 import java.time.LocalDate;
 
 public class Employee {
