@@ -23,4 +23,11 @@ public class Employee {
         this.jobTitle = jobTitle;
         this.salary = salary;
     }
+
+    public String toString(){
+        return "Name: "+name+", Gender: "+gender+", DOB: "+DOfB+", Job Title: "+jobTitle+", Salary $"+salary;
+    }
+
+
+
 }
