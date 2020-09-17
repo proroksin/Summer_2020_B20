@@ -14,6 +14,21 @@ public class Circle extends Shape{
 
     public double radius;
 
+    /*
+    6 variables:
+            2 statics: name, hasVolume
+            4 instance: radius, area, perimeter, volume
+     */
+
+    public Circle(double radius){
+        this.radius = radius;
+        area = calculateArea();
+        perimeter = calculatePerimeter();
+        volume = calculateVolume();
+    }
+
+
+
 
     @Override
     public double calculateArea(){
@@ -29,4 +44,18 @@ public class Circle extends Shape{
     public double calculateVolume(){
         return 0;
     }
-}
+
+    static {
+        name = "Circle";
+        hasVolume = false;
+    }
+    public String toString(){
+        return "Circle{" +
+                "radius=" + radius +
+                ", area=" + area +
+                ", perimeter=" + perimeter +
+                ", volume=" + volume +
+                '}';
+    }
+    }
+
