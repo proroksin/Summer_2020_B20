@@ -39,4 +39,15 @@ public class Rectangle extends Shape{
         name = "Rectangle";
         hasVolume = false;
     }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "width=" + width +
+                ", length=" + length +
+                ", area=" + area +
+                ", perimeter=" + perimeter +
+                ", volume=" + volume +
+                '}';
+    }
 }
