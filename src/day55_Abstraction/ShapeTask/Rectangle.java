@@ -7,7 +7,7 @@ package day55_Abstraction.ShapeTask;
             add a constructor that takes two arguments for W & L of rectangle the and initialize the instance variables: width, length, area, perimeter, volume
             add a static block that can initialize the static variables of the rectangle
  */
-public class Rectangle extends Shape{
+public final class Rectangle extends Shape{
 
     public double width;
     public double length;
