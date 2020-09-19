@@ -39,8 +39,8 @@ public final class Rectangle extends Shape{
     }
 
     static {
-        name = "Rectangle";
-        hasVolume = false;
+        //name = "Rectangle";
+        //hasVolume = false;
     }
 
     @Override
