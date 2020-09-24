@@ -1,4 +1,4 @@
-package day57_Polymorphism;
+package day57_Polymorphism.PhoneTask;
 
 public class Huawei extends Phone implements  AndroidApp, AppleApp, Downloadable{
     public Huawei(String brand, String model, String size, double price) {
@@ -8,8 +8,8 @@ public class Huawei extends Phone implements  AndroidApp, AppleApp, Downloadable
         }
     }
 
-    public Huawei(String robbery, String s, int i) {
-        super(robbery, s, i);
+    public Huawei(String robbery, String s, int price) {
+        super(robbery, s, price);
     }
 
     @Override

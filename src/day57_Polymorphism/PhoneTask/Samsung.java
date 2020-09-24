@@ -1,4 +1,4 @@
-package day57_Polymorphism;
+package day57_Polymorphism.PhoneTask;
 
 public class Samsung extends Phone implements Downloadable,AndroidApp {
 
@@ -10,8 +10,8 @@ public class Samsung extends Phone implements Downloadable,AndroidApp {
 
     }
 
-    public Samsung(String s20, String s, int i) {
-        super(s20, s, i);
+    public Samsung(String s20, String s, int price) {
+        super(s20, s, price);
     }
 
     @Override
