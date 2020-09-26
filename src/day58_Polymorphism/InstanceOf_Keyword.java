@@ -1,7 +1,8 @@
 package day58_Polymorphism;
 
-import day55_Abstraction.ShapeTask.Circle;
+import day55_Abstraction.ShapeTask.*;
 import day55_Abstraction.ShapeTask.Cylinder;
+import day55_Abstraction.ShapeTask.Rectangle;
 import day55_Abstraction.ShapeTask.Shape;
 import day58_Polymorphism.AnimalTask.Animal;
 import day58_Polymorphism.AnimalTask.Cat;
@@ -41,7 +42,22 @@ public class InstanceOf_Keyword {
         Shape shape1 = new Circle(3);
 
         identifyShape(shape1);
+
+        Circle c1 = new Circle(3);
+        Circle c2 = new Circle(3);
+
+        System.out.println( equalsShape(c1, c2) );
+
+        System.out.println( equalsShape( new Circle(300),  new Circle(300) )   );
+
+        Rectangle a1 = new Rectangle(3, 5);
+        Rectangle a2 = new Rectangle(7, 5);
+
+        System.out.println(  equalsShape(a1, a2) );
+
+
     }
+
 
     public static void identifyShape(Shape shape){
         if(shape instanceof Circle){
@@ -57,10 +73,32 @@ public class InstanceOf_Keyword {
         boolean result = false;
 
         boolean bothCircle = shape1 instanceof Circle && shape2 instanceof Circle;
+        boolean bothRectangle = shape1 instanceof Rectangle && shape2 instanceof Rectangle;
+        boolean bothCylinder = shape1 instanceof Cylinder && shape2 instanceof Cylinder;
 
         if(bothCircle){
+            Circle c1 = (Circle)shape1;
+            Circle c2 = (Circle)shape2;
+            if(c1.radius == c2.radius){
+                result = true;
+            }
+        }
 
+        if(bothRectangle){
+            Rectangle r1 = (Rectangle)shape1;
+            Rectangle r2 = (Rectangle)shape2;
 
+            if(r1.width == r2.width && r1.length == r2.length){
+                result = true;
+            }
+        }
+
+        if(bothCylinder){
+            Cylinder c1 = (Cylinder) shape1;
+            Cylinder c2 = (Cylinder) shape2;
+            if(c1.height == c2.height && c1.radius == c2.radius){
+                result= true;
+            }
         }
 
         return result;
