@@ -1,8 +1,10 @@
 package day58_Polymorphism;
 
 
+import day57_Polymorphism.PhoneTask.Huawei;
 import day57_Polymorphism.PhoneTask.Iphone;
 import day57_Polymorphism.PhoneTask.Phone;
+import day57_Polymorphism.PhoneTask.Samsung;
 
 public class DownCasting_Practice {
 
@@ -15,9 +17,31 @@ public class DownCasting_Practice {
         System.out.println(phone1);
         System.out.println(iphone);
 
-        phone1.faceTiming(123456);
+        //phone1.faceTiming(123456);
         iphone.faceTiming(1234556);
 
-    }
+        //second way
+        ((Iphone)phone1).faceTiming(12354667);
+
+        System.out.println("====================================================");
+        Phone phone2 = new Samsung("S20", "7", 1000);
+
+        ( (Samsung)phone2 ).freezing();
+
+        //   ( (Iphone)phone2 ).faceTiming(123456);  // iphone & samsung are not inheriting each other
+
+        System.out.println("========================================");
+
+        Phone phone3 = new Huawei("spy","7", 10);
+
+        ( (Huawei)phone3 ).stealInfo();
+
+        //    ( (Iphone)phone3 ).faceTiming(1233111);
+
+
+
+
+
+}
 
 }
