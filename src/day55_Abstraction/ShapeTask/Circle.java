@@ -49,8 +49,8 @@ public final class Circle extends Shape{
     }
 
     static {
-        name = "Circle";
-        hasVolume = false;
+        //name = "Circle";
+        //hasVolume = false;
     }
     public String toString(){
         return "Circle{" +

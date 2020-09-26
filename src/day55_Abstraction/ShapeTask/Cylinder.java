@@ -43,8 +43,8 @@ public final class Cylinder extends Shape {
     }
 
     static {
-        name = "Cylinder";
-        hasVolume = true;
+        //name = "Cylinder";
+        //hasVolume = true;
     }
 
     @Override
