@@ -9,8 +9,11 @@ class A{
 
     private void method1(){}
     void method2(){}
-    protected void method3(){}
-    public void method4(){}
+    protected void method3(){System.out.println("Hello World");}
+    public void method4(){
+
+    }
+
 
 
 
@@ -18,4 +21,23 @@ class A{
 
 
 public class Inheritance extends A{
+
+    public void method3(){
+        System.out.println("Hello Cybertek");
+    }
+
+
+    public static void main(String[] args){
+        Inheritance obj = new Inheritance();
+       // System.out.println(obj.a); // private cannot be inherited
+        System.out.println(obj.b);
+        System.out.println(obj.c);
+        System.out.println(obj.d);
+
+        //obj.method1();
+        obj.method2();
+        obj.method3();
+        obj.method4();
+
+    }
 }
